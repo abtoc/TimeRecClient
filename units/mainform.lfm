@@ -1,0 +1,62 @@
+object Form1: TForm1
+  Left = 256
+  Height = 157
+  Top = 133
+  Width = 244
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsDialog
+  Caption = 'タイムカード'
+  ClientHeight = 157
+  ClientWidth = 244
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '1.8.2.0'
+  object Label1: TLabel
+    Left = 21
+    Height = 12
+    Top = 20
+    Width = 20
+    Caption = 'IDM'
+    ParentColor = False
+  end
+  object EditIDM: TEdit
+    Left = 56
+    Height = 26
+    Top = 17
+    Width = 130
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object LabelName: TLabel
+    Left = 21
+    Height = 33
+    Top = 56
+    Width = 153
+    Caption = '該当者無し'
+    Font.Height = -32
+    ParentColor = False
+    ParentFont = False
+  end
+  object LabelIn: TLabel
+    Left = 21
+    Height = 27
+    Top = 104
+    Width = 61
+    Caption = '--:--'
+    Font.Height = -27
+    Font.Name = '0'
+    ParentColor = False
+    ParentFont = False
+  end
+  object LabelOut: TLabel
+    Left = 115
+    Height = 27
+    Top = 104
+    Width = 61
+    Caption = '--:--'
+    Font.Height = -27
+    Font.Name = '0'
+    ParentColor = False
+    ParentFont = False
+  end
+end
