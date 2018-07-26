@@ -1,18 +1,18 @@
 object Form1: TForm1
-  Left = 256
-  Height = 157
-  Top = 133
-  Width = 244
+  Left = 264
+  Height = 179
+  Top = 140
+  Width = 295
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsDialog
   Caption = 'タイムカード'
-  ClientHeight = 157
-  ClientWidth = 244
+  ClientHeight = 179
+  ClientWidth = 295
   OnCreate = FormCreate
   OnDestroy = FormDestroy
   LCLVersion = '1.8.2.0'
   object Label1: TLabel
-    Left = 21
+    Left = 48
     Height = 12
     Top = 20
     Width = 20
@@ -20,7 +20,7 @@ object Form1: TForm1
     ParentColor = False
   end
   object EditIDM: TEdit
-    Left = 56
+    Left = 83
     Height = 26
     Top = 17
     Width = 130
@@ -28,7 +28,7 @@ object Form1: TForm1
     TabOrder = 0
   end
   object LabelName: TLabel
-    Left = 21
+    Left = 48
     Height = 33
     Top = 56
     Width = 153
@@ -38,7 +38,7 @@ object Form1: TForm1
     ParentFont = False
   end
   object LabelIn: TLabel
-    Left = 21
+    Left = 48
     Height = 27
     Top = 104
     Width = 61
@@ -49,7 +49,7 @@ object Form1: TForm1
     ParentFont = False
   end
   object LabelOut: TLabel
-    Left = 115
+    Left = 142
     Height = 27
     Top = 104
     Width = 61
@@ -58,5 +58,16 @@ object Form1: TForm1
     Font.Name = '0'
     ParentColor = False
     ParentFont = False
+  end
+  object ChkPost: TCheckBox
+    Left = 21
+    Height = 22
+    Top = 144
+    Width = 262
+    Caption = '出退勤簿に登録しない場合はチェックを外す'
+    Checked = True
+    OnChange = ChkPostChange
+    State = cbChecked
+    TabOrder = 1
   end
 end
