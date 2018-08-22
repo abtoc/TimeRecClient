@@ -81,12 +81,14 @@ begin
   except
     on E: Exception do
     begin
+      Beep(440, 1000);
       FIDM := '';
       LabelName.Caption := '該当者無し';
       Free;
       ShowMessage(E.Message);
     end
     else
+      Beep(440, 1000);
       LabelName.Caption := '該当者無し';
       FIDM := '';
       Free;
@@ -95,6 +97,7 @@ begin
 
   AJSon := GetJSON(AResponse);
   LabelName.Caption := UTF8Decode(AJson.FindPath('name').AsString);
+  Beep(440, 250);
 end;
 
 procedure TForm1.Disconnected(Sender: TObject);
